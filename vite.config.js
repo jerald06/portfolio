@@ -3,7 +3,7 @@ import { defineConfig } from "vite";
 
 export default defineConfig({
   logLevel: "error",
-  base: "/",
+  base: "/portfolio/",
   build: {
     emptyOutDir: true,
     sourcemap: false,
