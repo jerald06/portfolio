@@ -32,7 +32,10 @@ const caseStudyRoute = createRoute({
 
 const routeTree = rootRoute.addChildren([indexRoute, caseStudyRoute]);
 
-const router = createRouter({ routeTree });
+const router = createRouter({
+  routeTree,
+  basepath: import.meta.env.BASE_URL,
+});
 
 declare module "@tanstack/react-router" {
   interface Register {
